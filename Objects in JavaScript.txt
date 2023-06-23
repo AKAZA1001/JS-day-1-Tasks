@@ -1,0 +1,57 @@
+     Objects in JavaScript
+
+Objects are one of the most important data types in JavaScript. They are used to represent real-world entities, such as cars, people, and animals. Objects are also used to store data and code.
+
+An object in JavaScript is a collection of properties. A property is a key-value pair, where the key is a string and the value can be of any type. For example, the following code creates an object that represents a car:
+
+-Code snippet
+const car = {
+  make: "Honda",
+  model: "Civic",
+  year: 2023,
+};
+
+The make property of the car object is a string, the model property is a string, and the year property is a number.
+
+
+-Internal Representation of Objects
+
+Objects are stored in memory as a linked list of property entries. Each property entry contains the key, the value, and a pointer to the next property entry. The first property entry in the list is called the prototype. The prototype property of an object contains the default properties and methods for that object.
+
+The following diagram shows the internal representation of the car object:
+Code snippet
+car
+  |
+  |-- make: "Honda"
+  |-- model: "Civic"
+  |-- year: 2023
+  |
+  |-- prototype: Object.prototype
+
+The prototype property of the car object points to the Object.prototype object. The Object.prototype object is the prototype of all objects in JavaScript. It contains the default properties and methods for all objects.
+
+Accessing Object Properties
+
+There are three ways to access the properties of an object in JavaScript:
+
+Dot property accessor: The dot property accessor is the most common way to access object properties. To access a property using the dot property accessor, you use the . operator. For example, the following code accesses the make property of the car object:
+
+-Code snippet
+const make = car.make;
+ 
+Square brackets property accessor: The square brackets property accessor is another way to access object properties. To access a property using the square brackets property accessor, you use the [] operator. For example, the following code accesses the make property of the car object:
+
+-Code snippet
+const make = car['make'];
+
+Object destructuring: Object destructuring is a new feature in JavaScript that allows you to access object properties more concisely. To access a property using object destructuring, you use the { property } syntax. For example, the following code accesses the make property of the car object:
+
+-Code snippet
+const { make } = car;
+
+
+Conclusion
+
+Objects are a powerful data type in JavaScript. They are used to represent real-world entities, store data, and execute code. The internal representation of objects is a linked list of property entries. There are three ways to access object properties: the dot property accessor, the square brackets property accessor, and object destructuring.
+
+
